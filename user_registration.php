@@ -13,7 +13,7 @@
     <h2 class="text-center">REGISTER ACCOUNT</h2>
     <div class ="row d-flex align-items-center justify-content-center">
         <div class ="col-lg-12 col-xl-6">
-            <form action ="" method="post" enctype="multipart/form-data">
+            <form action ="" method="post">
             <div class ="form-outline mb-4">
             <label for ="user_username" class="form-label">Username</label>
             <input type="text" id="user_username" class="form-control" placeholder="Enter your user name" autocomplete="off"
