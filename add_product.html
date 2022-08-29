@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+              * {
+                background-color: lightblue;
+              }
+              id {
+                font-weight: bold;
+                margin-left: 600px;
+                padding-bottom: 500px;
+              }
+              name {
+                font-weight: bold;
+                margin-left: 578px;
+                padding-bottom: 500px;
+              }
+              type {
+                font-weight: bold;
+                margin-left: 585px;
+                padding-bottom: 500px;
+              }
+              brand {
+                font-weight: bold;
+                margin-left: 574px;
+                padding-bottom: 500px;
+              }
+              specifications {
+                font-weight: bold;
+                margin-left: 524px;
+                padding-bottom: 500px;
+    
+              }
+              price {
+                font-weight: bold;
+                margin-left: 564px;
+                padding-bottom: 500px;
+              }
+              quantity {
+                font-weight: bold;
+                position: relative;
+                right: -557px;
+              }
+              sub {
+                margin-left: 675px;
+              }
+        </style>
+    </head>
+    <body>
+        <h1>NORTH SOUTH ELECTRONICS</h1>
+        <form action="add.php" method="POST">
+            <id>ID <input type="number" name="ID" class="number" autocomplete="off" required placeholder="Enter product ID"></id><br>
+            <name>Name <input type="text" name="Name" class="text" autocomplete="off" required placeholder="Enter product name"></name><br>
+            <type>Type <input type="text" name="Type" class="text" autocomplete="off" required placeholder="Enter product type"></type><br>
+            <brand>Brand <input type="text" name="Brand" class="text" autocomplete="off" required placeholder="Enter brand name"></brand><br>
+            <specifications>Specifications <input type="text" name="Specifications" class="text" autocomplete="off" required placeholder="Enter product specifications"></specifications><br>
+            <price>Price($) <input type="number" name="Price($)" class="number" autocomplete="off" required placeholder="Enter price in $"></price><br>
+            <quantity>Quantity <input type="number" name="Quantity" class="number" autocomplete="off" required placeholder="Enter quantity"></quantity><br>
+            <sub><input type="Submit" name="submit" value="Add"></sub>
+        </form>
+    </body>
+</html>
