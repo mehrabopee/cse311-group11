@@ -67,7 +67,7 @@ if(isset($_POST['user_register'])){
   $user_contact=$_POST['user_contact'];
 
   $select_query="Select * from `user_reg_table` where username='$user_username' or user_email='$user_email' ";
-  $result=mysqli_query($con,$select_query);
+  $result=mysqli_query($db,$select_query);
   $rows_count=mysqli_num_rows($result);
   if($rows_count > 0){
     echo "<script>alert('Username or Email already exist')</script>";
@@ -78,13 +78,13 @@ if(isset($_POST['user_register'])){
   else {
   $insert_query="insert into `user_reg_table`(username,user_email,user_password,
  user_contact) values ('$user_username','$user_email','$hash_password','$user_contact')";
-  $sql_execute=mysqli_query($con,$insert_query);
+  $sql_execute=mysqli_query($db,$insert_query);
   if($sql_execute){
     echo "<script>alert('Data inserted successfully')</script>";
   }
   else
   {
-    die(mysqli_error($con));
+    die(mysqli_error($db));
   }
 }
   }
