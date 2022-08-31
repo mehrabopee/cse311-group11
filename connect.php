@@ -1,6 +1,6 @@
 <?php
-$con=mysqli_connect('localhost','root','','login_system_user');
-if(!$con){
+$db=mysqli_connect('localhost','root','','cse311_project');
+if(!$db){
    die(mysqli_error($db));
 
    
