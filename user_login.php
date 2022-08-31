@@ -59,7 +59,8 @@ if(isset($_POST['user_login'])){
     $row_data=mysqli_fetch_assoc($result);
     if($row_count>0){
     if(password_verify($user_pa,$row_data['user_password'])){
-      echo "<script>alert('Login successful')</script>";
+      header("location:customer_home.php");
+      exit();
     }else{
       echo "<script>alert('Invalid ')</script>";
     }
